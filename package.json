@@ -1,0 +1,116 @@
+{
+<<<<<<< HEAD
+  "name": "wangyiyun_app1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^1.2.0",
+    "core-js": "^3.8.3",
+    "vant": "^4.0.0",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3",
+    "vue3-marquee": "^3.1.2",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "babel-plugin-import": "^1.13.5",
+    "less": "^4.0.0",
+    "less-loader": "^8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+=======
+  "name": "NeteaseCloudMusicApi",
+  "version": "4.5.8",
+  "description": "网易云音乐 NodeJS 版 API",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha -r intelli-espower-loader -t 20000 server.test.js main.test.js --exit",
+    "lint": "eslint \"**/*.{js,ts}\"",
+    "lint-fix": "eslint --fix \"**/*.{js,ts}\"",
+    "prepare": "husky install",
+    "pkgwin": "pkg . -t node14-win-x64 -o app",
+    "pkglinux": "pkg . -t node14-linux-x64 -o app",
+    "pkgmacos": "pkg . -t node14-macos-x64 -o app"
+  },
+  "bin": "./app.js",
+  "pkg": {
+    "scripts": "module/*.js",
+    "assets": [
+      "/node_modules/vm2/lib/contextify.js",
+      "/public"
+    ]
+  },
+  "keywords": [
+    "网易云音乐",
+    "网易云",
+    "音乐",
+    "网易云音乐nodejs"
+  ],
+  "main": "main.js",
+  "types": "./interface.d.ts",
+  "engines": {
+    "node": ">=12"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "author": "binaryify",
+  "license": "MIT",
+  "files": [
+    "module",
+    "util",
+    "plugins",
+    "main.d.ts",
+    "interface.d.ts",
+    "module_types",
+    "server.js"
+  ],
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.9",
+    "md5": "^2.3.0",
+    "music-metadata": "^7.5.3",
+    "pac-proxy-agent": "^5.0.0",
+    "qrcode": "^1.4.4",
+    "safe-decode-uri-component": "^1.2.1",
+    "tunnel": "^0.0.6",
+    "yargs": "^17.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/express-fileupload": "^1.2.2",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "16.11.19",
+    "@typescript-eslint/eslint-plugin": "5.0.0",
+    "@typescript-eslint/parser": "5.0.0",
+    "eslint": "8.7.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-html": "6.2.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "husky": "7.0.4",
+    "intelli-espower-loader": "1.1.0",
+    "lint-staged": "12.1.7",
+    "mocha": "8.4.0",
+    "power-assert": "1.6.1",
+    "prettier": "2.5.1",
+    "typescript": "4.5.2"
+  }
+>>>>>>> eb1b1d6 (tow)
+}
